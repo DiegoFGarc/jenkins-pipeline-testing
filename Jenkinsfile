@@ -20,7 +20,7 @@ pipeline {
   		        S_VAR = "Segunda variable"
             }
             steps {
-                sh 'echo "Hello, ${env.S_VAR}!"'
+                sh 'echo "Hello, ${S_VAR}!"'
             }
         }
         stage('Deploy') {
