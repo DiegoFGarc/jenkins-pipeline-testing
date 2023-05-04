@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'echo "Hola, mundos!"'
+                sh 'echo "Hola, mundos desde el webhook!"'
             }
         }
     }
