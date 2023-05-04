@@ -1,9 +1,18 @@
 pipeline {
     agent any
+
+    environment {
+  		F_VAR = credentials('first-variable')
+    }
+
     stages {
         stage('Build') {
             steps {
-                sh 'echo "Building..."'
+                sh '''
+			            sh 'echo "Building..."'
+			            sh 'echo $F_VAR'
+           
+                    '''  
             }
         }
         stage('Test') {
