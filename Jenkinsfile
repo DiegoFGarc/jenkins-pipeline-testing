@@ -9,8 +9,8 @@ pipeline {
         stage('Build') {
             steps {
                 sh '''
-			            sh 'echo "Building..."'
-			            sh 'echo $F_VAR'
+			            echo "Building..."
+			            echo $F_VAR
            
                     '''  
             }
